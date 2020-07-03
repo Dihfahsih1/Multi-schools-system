@@ -25,7 +25,6 @@ class MessageQuery(object):
 
     def resolve_message(self, info, **kwargs):
         uuid_id = kwargs.get('uuid_id')
-
         if uuid_id is not None:
             return Message.objects.get(uuid_id=uuid_id)
 
