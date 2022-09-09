@@ -84,7 +84,7 @@ pytz==2019.2
 PyYAML==3.13
 redis==3.3.11
 regex==2019.11.1
-reportlab==3.5.23
+reportlab==3.5.55
 requests==2.22.0
 requests-oauthlib==1.2.0
 Rx==1.6.1
