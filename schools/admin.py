@@ -83,11 +83,11 @@ class MessageAdmin(admin.ModelAdmin):
     list_filter = ("sender", "recipient")
 
 
+@admin.register(Attendance)
 class AttendanceProfileAdmin(admin.ModelAdmin):
     list_display = ['student', 'classroom', 'date', 'status']
 
 
-admin.site.register(Attendance, AttendanceProfileAdmin)
 
 admin.site.register(LogEntry)
 admin.site.register(Year)

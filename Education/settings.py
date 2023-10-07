@@ -1,5 +1,5 @@
 import os
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 from django.contrib.messages import constants as message_constants
 MESSAGE_LEVEL = message_constants.DEBUG
 
@@ -185,7 +185,6 @@ TIME_ZONE = 'Africa/Kampala'
 
 USE_I18N = True
 
-USE_L10N = True
 
 USE_TZ = True
 

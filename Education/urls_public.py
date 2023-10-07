@@ -1,7 +1,7 @@
-from django.conf.urls import url
+from django.urls import re_path
 from schools import views
 
 
 urlpatterns = [
-    url(r'^canon/', views.web, name='index_public'),
+    re_path(r'^canon/', views.web, name='index_public'),
 ]
