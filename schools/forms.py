@@ -1,7 +1,8 @@
 from django.forms import Textarea, TextInput, ChoiceField
 from django.db import transaction
 from schools.models import *
-from bootstrap_datepicker_plus import DatePickerInput, TimePickerInput, MonthPickerInput, DateTimePickerInput
+from bootstrap_datepicker_plus.widgets import DatePickerInput, TimePickerInput, DateTimePickerInput, MonthPickerInput, YearPickerInput
+
 from django.forms.widgets import CheckboxSelectMultiple, RadioSelect
 from django.contrib.auth.forms import UserChangeForm
 

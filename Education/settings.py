@@ -222,7 +222,8 @@ IMPORT_EXPORT_USE_TRANSACTIONS = True
 # SESSION_EXPIRE_AFTER_LAST_ACTIVITY = True
 # SESSION_COOKIE_AGE = 60 * 10  # Session will expiry after 10 minutes idle.
 # SESSION_SAVE_EVERY_REQUEST = True
-
+# Specify that you want to use the default AutoField for primary keys
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
@@ -230,6 +231,8 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
+
+USE_L10N = True  # Set to True to enable localization (default) or False to disable it
 
 TEMPLATES[0]['OPTIONS']['context_processors'].append("schools.context_processors.term_processor")
 TEMPLATES[0]['OPTIONS']['context_processors'].append("schools.context_processors.year_processor")
